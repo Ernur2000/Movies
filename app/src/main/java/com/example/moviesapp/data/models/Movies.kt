@@ -1,5 +1,8 @@
 package com.example.moviesapp.data.models
 
+import androidx.annotation.Keep
+
+@Keep
 data class Movies(
     val _links: Links,
     val averageRuntime: Int,

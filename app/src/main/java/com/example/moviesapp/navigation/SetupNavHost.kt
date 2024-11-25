@@ -1,14 +1,18 @@
 package com.example.moviesapp.navigation
 
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.remember
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import com.example.moviesapp.MainViewModel
+import com.example.moviesapp.data.models.Movies
 import com.example.moviesapp.screens.DetailsScreen
 import com.example.moviesapp.screens.MainScreen
 import com.example.moviesapp.screens.SplashScreen
 import com.example.moviesapp.utils.Constants
+
+const val MOVIES = "movies"
 
 sealed class Screens(val route: String) {
     object Splash : Screens(route = Constants.Screens.SPLASH_SCREEN)
